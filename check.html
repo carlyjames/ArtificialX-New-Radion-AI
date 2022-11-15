@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="testimonial section">
+
+      <div class="testimonial__container container swiper">
+        <div class="swiper-wrapper">
+          <!-- testimonial 1 -->
+          <div class="testimonial__content swiper-slide">
+
+            <p class="testimonial__description">
+              We re-did our website twice in a 12 month period. There was no
+              comparison between the the designer and james. Professional,
+              Creative, Attentive to Detail, Excellent Communication…If I had
+              contracted with james the first time I would not have had to do it
+              twice.
+            </p>
+          </div>
+          <!-- testimonial 2 -->
+          <div class="testimonial__content swiper-slide">
+
+            <p class="testimonial__description">
+              I went to james with a basic “feel” I wanted in a website. He
+              helped flush out the visual layout and content. james’s services
+              are bargain when you weigh the cost versus the product you
+              receive. I will be working with him again in future endeavors.
+              Thanks again!
+            </p>
+          </div>
+          <!-- testimonial 3 -->
+          <div class="testimonial__content swiper-slide">
+
+
+            <p class="testimonial__description">
+              Our site is beautiful! It is easy to navigate. The support has
+              been remarkable for WordPress; if I don’t understand something, or
+              can’t accomplish a task, James is a extremely talented web
+              designer. We are amazed from where traffic to our site comes; we
+              are a moderate sized nonprofit and now we are having global
+              visitors.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-bullets"></div>
+      </div>
+    </div>
+    <script src="./swiper-bundle.min.js"></script>
+    <script>
+      let swiperTestimonial = new Swiper(".testimonial__container", {
+        grabCursor: true,
+        cssMode: true,
+        loop: true,
+        speed: 300,
+        spaceBetween: 48,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: true,
+          dynamicBullets: true,
+        },
+
+        breakpoints: {
+          568: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
